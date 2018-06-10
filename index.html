@@ -11,17 +11,14 @@
         <meta name="og:url" content="https://funairacing.github.io/Number-Generator/"/>
         <link rel="icon" type="image/png" href="./images/logo.png"/>
         <link rel="stylesheet" type="text/css" href="style.css"/>
-        <script src="index.js"></script>
+        <script src="./js/index.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/riot/3.7.3/riot.min.js'></script>
     </head>
     <body>
         <h1>Off-Road Number Generator β</h1>
-        <div>
-            <canvas id="canvas" width="400px" height="150px"></canvas>
-        </div>
-        <div>
-            <input type="text" id="textbox" size="50" value="" spellcheck="false" oninput="redraw();">
-            <button type="button" onclick="saveImage();">画像を保存する</button>
-        </div>
+        <showCanvas></showCanvas>
+        <script src="./js/show_canvas.js"></script>
+        <script>riot.mount('showcanvas')</script>
         <p>
             オフロードバイクのゼッケン用のナンバーを作成するツールです。<br>
             コンビニでA4に印刷しておよそ縦80~90mmになるようにしています。(ライト付きED車のフロントマスク上にちょうど収まるサイズ)<br>
